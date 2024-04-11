@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      ol {
+        counter-reset: Step;
+        list-style-type: none;
+      }
+      li::before {
+        counter-increment: Step;
+        content: counters(Step, ".") " ";
+      }
+    </style>
+  </head>
+  <body>
+    <ol>
+      <li>item</li>
+      <li>
+        item
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>
+            item
+            <ol>
+              <li>item</li>
+              <li>item</li>
+            </ol>
+            <ol>
+              <li>item</li>
+              <li>item</li>
+              <li>item</li>
+            </ol>
+          </li>
+          <li>item</li>
+        </ol>
+      </li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    <ol>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+  </body>
+</html>

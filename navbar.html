@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <style type="text/css">
+      nav {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        background-color: green;
+      }
+
+      li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 30px;
+        font-size: 35px;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: orange;
+        text-decoration: none;
+      }
+
+      li > ul {
+        display: none;
+      }
+
+      li:hover ul {
+        display: block;
+        position: absolute;
+        left: 280px;
+        background-color: green;
+        margin-top: 10px;
+      }
+
+      li:hover ul li a:link {
+        display: flex;
+        flex-direction: column;
+        margin-left: -30px;
+        padding-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li>
+          <a href="">Products</a>
+          <ul>
+            <li><a href="">Engineering</a></li>
+            <li><a href="">Telecom</a></li>
+            <li><a href="">Energy</a></li>
+            <li><a href="">Finance</a></li>
+            <li><a href="">Consultancy</a></li>
+          </ul>
+        </li>
+        <li><a href="">Services</a>
+        </li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
