@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <style type="text/css">
+      .change-img img {
+        transition: 3s ease-in-out;
+      }
+
+      img.first,
+      div.change-img:hover img.second {
+        opacity: 1;
+        position: absolute;
+      }
+      
+      .change-img:hover img.first,
+      img.second {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="change-img">
+      <img
+        class="first"
+        width="400px"
+        height="300px"
+        src="https://assets.weforum.org/article/image/responsive_big_webp_DZZif56hzlwOs_HzBXT-fjzTQCb64yjMWLKsMW6OioI.webp"
+        alt="img1"
+      />
+      <img
+        class="second"
+        width="400px"
+        height="300px"
+        src="https://media.istockphoto.com/id/1043560968/photo/sunrise-on-a-lake.jpg?s=2048x2048&w=is&k=20&c=55ADwWHLBP58bFcc1Jc7HKnAbuzJ9_xQYIRzB6m76os="
+        alt="img2"
+      />
+    </div>
+  </body>
+</html>
